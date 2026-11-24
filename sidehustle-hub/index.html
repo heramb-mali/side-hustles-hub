@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SideHustle Hub — Student Income Resources</title>
+  <meta name="description" content="The ultimate database of side hustles for students. Filter by difficulty, time commitment, and earning potential. Full guides, revenue models, and roadmaps." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="home">
+
+  <!-- Update Ticker -->
+  <div class="update-ticker">
+    <div class="ticker-pulse"></div>
+    <span id="ticker-text" class="ticker-text">Loading database...</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">💡 <span>SideHustle</span>Hub</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">All Hustles</a></li>
+      <li><a href="#filters">Filter</a></li>
+      <li><a href="#about">About</a></li>
+      <li><span class="nav-badge" id="nav-count">...</span></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-eyebrow">Student Income Database 2026</div>
+    <h1>Find Your Perfect<br /><span class="gradient">Side Hustle</span></h1>
+    <p>A curated, categorised database of proven side hustles for students — with full roadmaps, revenue models, and difficulty ratings.</p>
+
+    <a href="#hustles" class="btn-primary" style="margin:0 auto;display:inline-flex">
+      Explore All Hustles ↓
+    </a>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number" id="stat-count">—</span>
+        <span class="stat-label">Side Hustles</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" id="stat-categories">—</span>
+        <span class="stat-label">Categories</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" id="stat-avg-rev">—</span>
+        <span class="stat-label">Avg. Monthly Revenue</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" id="stat-updated" style="font-size:16px">—</span>
+        <span class="stat-label">Last Updated</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="filters-section" id="filters">
+    <div class="filters-row">
+      <span class="filter-label">Category:</span>
+      <div id="cat-filters" style="display:flex;gap:8px;flex-wrap:wrap">
+        <div class="skeleton" style="width:50px;height:32px;border-radius:20px"></div>
+        <div class="skeleton" style="width:60px;height:32px;border-radius:20px"></div>
+        <div class="skeleton" style="width:70px;height:32px;border-radius:20px"></div>
+      </div>
+    </div>
+
+    <div class="filters-row">
+      <span class="filter-label">Difficulty:</span>
+      <div id="diff-filters" style="display:flex;gap:8px;flex-wrap:wrap">
+        <div class="skeleton" style="width:50px;height:32px;border-radius:20px"></div>
+        <div class="skeleton" style="width:60px;height:32px;border-radius:20px"></div>
+        <div class="skeleton" style="width:70px;height:32px;border-radius:20px"></div>
+      </div>
+
+      <input
+        class="search-bar"
+        type="text"
+        id="search-input"
+        placeholder="🔍  Search hustles, skills, platforms..."
+        oninput="handleSearch(event)"
+      />
+
+      <select class="sort-select" id="sort-select" onchange="setSort(this.value)">
+        <option value="featured">Sort: Featured</option>
+        <option value="revenue">Sort: Revenue Potential</option>
+        <option value="difficulty">Sort: Easiest First</option>
+        <option value="time">Sort: Least Time</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Grid -->
+  <main class="hustles-grid" id="hustles-grid">
+    <!-- Rendered by JS -->
+    <div class="hustle-card skeleton" style="height:280px;cursor:default"></div>
+    <div class="hustle-card skeleton" style="height:280px;cursor:default"></div>
+    <div class="hustle-card skeleton" style="height:280px;cursor:default"></div>
+    <div class="hustle-card skeleton" style="height:280px;cursor:default"></div>
+    <div class="hustle-card skeleton" style="height:280px;cursor:default"></div>
+    <div class="hustle-card skeleton" style="height:280px;cursor:default"></div>
+  </main>
+
+  <!-- About Section -->
+  <section id="about" style="max-width:800px;margin:0 auto 80px;padding:0 24px">
+    <div class="section-card">
+      <div class="section-title">ℹ About This Platform</div>
+      <p style="color:var(--muted);font-size:14px;line-height:1.8;margin-bottom:16px">
+        <strong style="color:var(--text)">SideHustle Hub</strong> is a free, open-source student resource that aggregates the best income opportunities available to full-time students in 2026. Each hustle is hand-researched and rated across four dimensions:
+      </p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px">
+        <div style="background:var(--surface2);padding:16px;border-radius:8px;border:1px solid var(--border)">
+          <div style="font-size:20px;margin-bottom:8px">🎯</div>
+          <div style="font-size:13px;font-weight:700;margin-bottom:4px">Difficulty Score</div>
+          <div style="font-size:12px;color:var(--muted)">Easy · Medium · Hard based on skill barrier</div>
+        </div>
+        <div style="background:var(--surface2);padding:16px;border-radius:8px;border:1px solid var(--border)">
+          <div style="font-size:20px;margin-bottom:8px">⏱</div>
+          <div style="font-size:13px;font-weight:700;margin-bottom:4px">Time Commitment</div>
+          <div style="font-size:12px;color:var(--muted)">Weekly hours required alongside studies</div>
+        </div>
+        <div style="background:var(--surface2);padding:16px;border-radius:8px;border:1px solid var(--border)">
+          <div style="font-size:20px;margin-bottom:8px">📈</div>
+          <div style="font-size:13px;font-weight:700;margin-bottom:4px">Revenue Scope</div>
+          <div style="font-size:12px;color:var(--muted)">Long-term earning ceiling and scalability</div>
+        </div>
+        <div style="background:var(--surface2);padding:16px;border-radius:8px;border:1px solid var(--border)">
+          <div style="font-size:20px;margin-bottom:8px">🔄</div>
+          <div style="font-size:13px;font-weight:700;margin-bottom:4px">Auto-Updated</div>
+          <div style="font-size:12px;color:var(--muted)">Database refreshes every 30s, weekly data review</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Built for students, by students · <a href="https://github.com" target="_blank">Open Source on GitHub</a></p>
+    <p style="margin-top:8px">Data updated weekly · Auto-refresh every 30 seconds · <span id="stat-count-footer">10</span> hustles tracked</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/chatbot.js"></script>
+  <script>
+    // Update nav count when DB loads
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new MutationObserver(() => {
+        const count = document.getElementById('stat-count');
+        const nav = document.getElementById('nav-count');
+        if (count && nav && count.textContent !== '—') {
+          nav.textContent = count.textContent;
+          // Also update chatbot's DB reference after app.js loads it
+          if (typeof db !== 'undefined' && db.hustles && window.hustleDb !== undefined) {
+            window.hustleDb = db.hustles;
+          }
+        }
+      });
+      const target = document.getElementById('stat-count');
+      if (target) observer.observe(target, { childList: true });
+    });
+  </script>
+</body>
+</html>

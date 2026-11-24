@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-11-24",
+    "totalHustles": 10,
+    "updateFrequency": "weekly"
+  },
+  "categories": ["Tech", "Creative", "Education", "Service", "Content", "Finance"],
+  "hustles": [
+    {
+      "id": "freelance-web-dev",
+      "title": "Freelance Web Development",
+      "category": "Tech",
+      "difficulty": "Medium",
+      "difficultyScore": 2,
+      "timePerWeek": "10–20 hrs",
+      "timeScore": 3,
+      "startupCost": "$0–$50",
+      "avgMonthlyRevenue": "$800–$3,000",
+      "scope": "High",
+      "scopeScore": 5,
+      "skills": ["HTML/CSS", "JavaScript", "React or similar", "Git"],
+      "tools": ["VS Code", "GitHub", "Figma (free)", "Vercel"],
+      "platforms": ["Upwork", "Fiverr", "Toptal", "LinkedIn"],
+      "revenueModel": {
+        "primary": "Per-project billing ($300–$3,000/project)",
+        "secondary": "Monthly retainer for maintenance ($150–$500/mo)",
+        "upsells": ["SEO add-ons", "Hosting management", "Content updates"]
+      },
+      "roadmap": [
+        "Build 2–3 portfolio projects (clone + personal site)",
+        "Create profiles on Upwork and Fiverr",
+        "Start with $5–$15/hr to get first 3 reviews",
+        "Raise rates after 5-star reviews",
+        "Move to direct clients via LinkedIn / cold email",
+        "Specialize in a niche (e-commerce, SaaS, landing pages)"
+      ],
+      "pros": ["High demand", "Fully remote", "Scales to agency"],
+      "cons": ["Client management overhead", "Feast-or-famine income early on"],
+      "resources": [
+        { "name": "The Odin Project", "url": "https://www.theodinproject.com" },
+        { "name": "freeCodeCamp", "url": "https://www.freecodecamp.org" },
+        { "name": "Upwork Getting Started", "url": "https://www.upwork.com/resources" }
+      ],
+      "badge": "🚀",
+      "featured": true
+    },
+    {
+      "id": "content-creation",
+      "title": "Content Creation & YouTube",
+      "category": "Content",
+      "difficulty": "Easy",
+      "difficultyScore": 1,
+      "timePerWeek": "5–15 hrs",
+      "timeScore": 2,
+      "startupCost": "$0–$200",
+      "avgMonthlyRevenue": "$200–$5,000+",
+      "scope": "Very High",
+      "scopeScore": 5,
+      "skills": ["Video editing", "Scripting", "SEO basics", "Consistency"],
+      "tools": ["DaVinci Resolve (free)", "Canva", "TubeBuddy", "OBS Studio"],
+      "platforms": ["YouTube", "TikTok", "Instagram Reels", "Shorts"],
+      "revenueModel": {
+        "primary": "AdSense revenue ($1–$5 RPM)",
+        "secondary": "Sponsorships ($200–$5,000/video at 10k subs)",
+        "upsells": ["Affiliate marketing", "Merchandise", "Digital products", "Patreon"]
+      },
+      "roadmap": [
+        "Pick a niche aligned with your knowledge (study tips, coding, finance)",
+        "Post 1 video/week consistently for 3 months",
+        "Optimize titles, thumbnails, and descriptions for SEO",
+        "Engage with comments to boost algorithm",
+        "Apply for YPP at 1,000 subs / 4,000 watch hours",
+        "Reach out to brands for sponsorships at 5k–10k subscribers"
+      ],
+      "pros": ["Passive income potential", "Builds personal brand", "Multiple revenue streams"],
+      "cons": ["Slow start (6–12 months)", "Algorithm-dependent"],
+      "resources": [
+        { "name": "Think Media YouTube Strategy", "url": "https://www.youtube.com/@ThinkMedia" },
+        { "name": "VidIQ", "url": "https://vidiq.com" },
+        { "name": "Creator Academy", "url": "https://creatoracademy.youtube.com" }
+      ],
+      "badge": "🎥",
+      "featured": true
+    },
+    {
+      "id": "tutoring",
+      "title": "Online Tutoring",
+      "category": "Education",
+      "difficulty": "Easy",
+      "difficultyScore": 1,
+      "timePerWeek": "5–20 hrs",
+      "timeScore": 2,
+      "startupCost": "$0",
+      "avgMonthlyRevenue": "$400–$2,000",
+      "scope": "High",
+      "scopeScore": 4,
+      "skills": ["Subject expertise", "Communication", "Patience"],
+      "tools": ["Zoom / Google Meet", "Whiteboard (Miro/Jamboard)", "Notion"],
+      "platforms": ["Wyzant", "Tutorme", "Chegg Tutors", "Superprof", "Direct"],
+      "revenueModel": {
+        "primary": "Hourly sessions ($15–$80/hr based on subject)",
+        "secondary": "Package bundles (5-session packs at discount)",
+        "upsells": ["Group classes", "Pre-recorded courses on Udemy/Gumroad"]
+      },
+      "roadmap": [
+        "List subjects you can teach (math, science, coding, languages)",
+        "Create a profile on Wyzant or Tutorme",
+        "Offer first session free to get reviews",
+        "Build recurring students (weekly sessions)",
+        "Create group sessions to 3x hourly rate",
+        "Package and sell recorded sessions as a course"
+      ],
+      "pros": ["Immediate income", "Flexible schedule", "Zero cost to start"],
+      "cons": ["Time-limited (not passive)", "Platform fees (20–30%)"],
+      "resources": [
+        { "name": "Wyzant", "url": "https://www.wyzant.com/become-a-tutor" },
+        { "name": "Chegg Tutors", "url": "https://www.chegg.com/tutors" }
+      ],
+      "badge": "📚",
+      "featured": false
+    },
+    {
+      "id": "dropshipping",
+      "title": "Dropshipping / Print-on-Demand",
+      "category": "Service",
+      "difficulty": "Medium",
+      "difficultyScore": 2,
+      "timePerWeek": "8–15 hrs",
+      "timeScore": 2,
+      "startupCost": "$50–$200",
+      "avgMonthlyRevenue": "$300–$5,000",
+      "scope": "Very High",
+      "scopeScore": 5,
+      "skills": ["Product research", "Facebook/TikTok ads", "Customer service"],
+      "tools": ["Shopify ($1 trial)", "DSers / Printful", "Canva", "Meta Ads Manager"],
+      "platforms": ["Shopify", "Etsy (POD)", "Amazon Merch", "WooCommerce"],
+      "revenueModel": {
+        "primary": "Product margin (20–50% markup on wholesale)",
+        "secondary": "Bundle deals and upsells at checkout",
+        "upsells": ["Email marketing sequences", "Subscription boxes"]
+      },
+      "roadmap": [
+        "Research winning products on TikTok / Amazon Best Sellers",
+        "Set up Shopify store (use free themes)",
+        "Connect DSers for AliExpress dropshipping or Printful for POD",
+        "Run $5/day TikTok or Meta test ads",
+        "Scale winning ad sets; kill losers within 3 days",
+        "Build email list for repeat customers"
+      ],
+      "pros": ["No inventory needed", "Fully automated once set up", "Scalable"],
+      "cons": ["Ad spend required", "Thin margins", "Competition is high"],
+      "resources": [
+        { "name": "Shopify Free Trial", "url": "https://www.shopify.com" },
+        { "name": "Printful", "url": "https://www.printful.com" },
+        { "name": "DSers", "url": "https://www.dsers.com" }
+      ],
+      "badge": "🛒",
+      "featured": false
+    },
+    {
+      "id": "social-media-management",
+      "title": "Social Media Management",
+      "category": "Creative",
+      "difficulty": "Easy",
+      "difficultyScore": 1,
+      "timePerWeek": "10–20 hrs",
+      "timeScore": 2,
+      "startupCost": "$0",
+      "avgMonthlyRevenue": "$500–$3,000",
+      "scope": "High",
+      "scopeScore": 4,
+      "skills": ["Copywriting", "Graphic design basics", "Scheduling", "Analytics"],
+      "tools": ["Canva", "Buffer / Later", "Meta Business Suite", "ChatGPT"],
+      "platforms": ["Instagram", "LinkedIn", "TikTok", "Twitter/X"],
+      "revenueModel": {
+        "primary": "Monthly retainer per client ($300–$1,500/client/mo)",
+        "secondary": "One-time content audits ($100–$500)",
+        "upsells": ["Paid ad management", "Influencer outreach", "Email newsletter"]
+      },
+      "roadmap": [
+        "Build your own social presence first (proof of concept)",
+        "Offer free 30-day management to 1 local business",
+        "Document results (follower growth, engagement %) as case study",
+        "Cold-DM 10 businesses/day on Instagram/LinkedIn",
+        "Package services into tiers: Starter / Growth / Premium",
+        "Hire a VA to handle scheduling at scale"
+      ],
+      "pros": ["High demand from small businesses", "Recurring income", "Low barrier to entry"],
+      "cons": ["Requires constant creativity", "Client churn risk"],
+      "resources": [
+        { "name": "Canva", "url": "https://www.canva.com" },
+        { "name": "Buffer", "url": "https://buffer.com" },
+        { "name": "HubSpot SMM Course (Free)", "url": "https://academy.hubspot.com" }
+      ],
+      "badge": "📱",
+      "featured": true
+    },
+    {
+      "id": "affiliate-marketing",
+      "title": "Affiliate Marketing",
+      "category": "Finance",
+      "difficulty": "Medium",
+      "difficultyScore": 2,
+      "timePerWeek": "5–10 hrs",
+      "timeScore": 1,
+      "startupCost": "$0–$100",
+      "avgMonthlyRevenue": "$100–$10,000+",
+      "scope": "Very High",
+      "scopeScore": 5,
+      "skills": ["SEO / Blogging", "Email marketing", "Niche research", "Content writing"],
+      "tools": ["WordPress / Ghost", "Ahrefs (free trial)", "ConvertKit", "Pretty Links"],
+      "platforms": ["Amazon Associates", "ShareASale", "CJ Affiliate", "Impact"],
+      "revenueModel": {
+        "primary": "Commission per sale (3–50% depending on program)",
+        "secondary": "Pay-per-click affiliate programs",
+        "upsells": ["Email list monetization", "Digital product of your own"]
+      },
+      "roadmap": [
+        "Pick a micro-niche (e.g., 'best laptops for college students')",
+        "Start a free blog on WordPress.com or buy cheap hosting",
+        "Write 20 SEO-optimized comparison/review articles",
+        "Join Amazon Associates + 2 niche affiliate programs",
+        "Build email list with a lead magnet",
+        "Scale with Pinterest / SEO traffic for passive income"
+      ],
+      "pros": ["Truly passive once ranking", "No customer support", "Unlimited scale"],
+      "cons": ["6–18 months to see significant income", "SEO changes can tank traffic"],
+      "resources": [
+        { "name": "Amazon Associates", "url": "https://affiliate-program.amazon.com" },
+        { "name": "Ahrefs Free Tools", "url": "https://ahrefs.com/free-seo-tools" },
+        { "name": "Income School YouTube", "url": "https://www.youtube.com/@IncomeSchool" }
+      ],
+      "badge": "💰",
+      "featured": false
+    },
+    {
+      "id": "graphic-design",
+      "title": "Freelance Graphic Design",
+      "category": "Creative",
+      "difficulty": "Medium",
+      "difficultyScore": 2,
+      "timePerWeek": "10–20 hrs",
+      "timeScore": 2,
+      "startupCost": "$0–$30",
+      "avgMonthlyRevenue": "$500–$3,000",
+      "scope": "High",
+      "scopeScore": 4,
+      "skills": ["Adobe Illustrator / Photoshop", "Canva Pro", "Brand design", "Typography"],
+      "tools": ["Canva", "Adobe Express", "Figma (free)", "Behance"],
+      "platforms": ["Fiverr", "99designs", "Dribbble", "Upwork"],
+      "revenueModel": {
+        "primary": "Per-project logos / brand kits ($50–$500)",
+        "secondary": "Monthly social media graphic packages ($200–$600/mo)",
+        "upsells": ["Brand guidelines doc", "Business card/merch design", "Template packs on Etsy"]
+      },
+      "roadmap": [
+        "Master Canva or Figma (free YouTube courses)",
+        "Create 5 sample logos / brand kits for fictional companies",
+        "Post portfolio on Behance, Dribbble, and Instagram",
+        "Start on Fiverr with competitive pricing ($5–$30 starter gigs)",
+        "Collect reviews and raise prices after 20 sales",
+        "Sell Canva template packs on Etsy as passive income"
+      ],
+      "pros": ["Creative expression", "Portfolio builds itself", "Etsy templates = passive"],
+      "cons": ["Saturated on Fiverr", "Revisions can be time-consuming"],
+      "resources": [
+        { "name": "Figma Free", "url": "https://www.figma.com" },
+        { "name": "Canva Design School", "url": "https://www.canva.com/learn" },
+        { "name": "99designs", "url": "https://99designs.com/designers" }
+      ],
+      "badge": "🎨",
+      "featured": false
+    },
+    {
+      "id": "app-development",
+      "title": "App / SaaS Development",
+      "category": "Tech",
+      "difficulty": "Hard",
+      "difficultyScore": 3,
+      "timePerWeek": "15–30 hrs",
+      "timeScore": 3,
+      "startupCost": "$0–$100",
+      "avgMonthlyRevenue": "$0–$50,000+",
+      "scope": "Very High",
+      "scopeScore": 5,
+      "skills": ["React Native / Flutter", "Backend (Node/Python)", "Databases", "UX/UI"],
+      "tools": ["VS Code", "Supabase / Firebase", "Expo", "Stripe"],
+      "platforms": ["App Store", "Google Play", "ProductHunt", "Indie Hackers"],
+      "revenueModel": {
+        "primary": "Subscription (SaaS) — $5–$49/month per user",
+        "secondary": "One-time app purchase ($1.99–$9.99)",
+        "upsells": ["Freemium → premium upgrades", "API access tier", "White-label licensing"]
+      },
+      "roadmap": [
+        "Identify a pain point you experience as a student",
+        "Validate with a no-code MVP (Glide / Bubble / Webflow)",
+        "Build v1 with React Native (Expo) or Next.js for web",
+        "Launch on ProductHunt and Indie Hackers",
+        "Get first 10 paying users ($1–$10/mo each) for validation",
+        "Iterate on feedback and scale marketing"
+      ],
+      "pros": ["Unlimited upside", "Builds technical skills", "Passive MRR"],
+      "cons": ["High time investment upfront", "May take 1–2 years to profitable"],
+      "resources": [
+        { "name": "Indie Hackers", "url": "https://www.indiehackers.com" },
+        { "name": "Supabase", "url": "https://supabase.com" },
+        { "name": "ProductHunt", "url": "https://www.producthunt.com" }
+      ],
+      "badge": "⚡",
+      "featured": true
+    },
+    {
+      "id": "resume-writing",
+      "title": "Resume & LinkedIn Optimization",
+      "category": "Service",
+      "difficulty": "Easy",
+      "difficultyScore": 1,
+      "timePerWeek": "5–10 hrs",
+      "timeScore": 1,
+      "startupCost": "$0",
+      "avgMonthlyRevenue": "$300–$1,500",
+      "scope": "Medium",
+      "scopeScore": 3,
+      "skills": ["Writing", "ATS knowledge", "LinkedIn SEO", "Career coaching basics"],
+      "tools": ["Canva", "Resume.io", "Grammarly", "LinkedIn"],
+      "platforms": ["Fiverr", "LinkedIn", "Upwork", "Reddit (r/jobs)"],
+      "revenueModel": {
+        "primary": "Per resume rewrite ($50–$200)",
+        "secondary": "Full package: resume + LinkedIn + cover letter ($150–$400)",
+        "upsells": ["Mock interview coaching ($50–$100/hr)", "Job search strategy session"]
+      },
+      "roadmap": [
+        "Study ATS (Applicant Tracking Systems) and modern resume formats",
+        "Rewrite resumes for 3 friends for free (get testimonials)",
+        "Create Fiverr gig with before/after screenshots",
+        "Niche down: tech resumes, entry-level, MBAs",
+        "Offer LinkedIn optimization as an add-on",
+        "Build email list of job seekers for recurring consults"
+      ],
+      "pros": ["Very quick to start", "High perceived value", "Referral-driven growth"],
+      "cons": ["Limited scale (time for money)", "Seasonal demand"],
+      "resources": [
+        { "name": "Resume Worded", "url": "https://resumeworded.com" },
+        { "name": "Jobscan (ATS checker)", "url": "https://www.jobscan.co" }
+      ],
+      "badge": "📝",
+      "featured": false
+    },
+    {
+      "id": "stock-photography",
+      "title": "Stock Photography & Digital Assets",
+      "category": "Creative",
+      "difficulty": "Easy",
+      "difficultyScore": 1,
+      "timePerWeek": "3–8 hrs",
+      "timeScore": 1,
+      "startupCost": "$0 (smartphone) – $500 (DSLR)",
+      "avgMonthlyRevenue": "$50–$1,000",
+      "scope": "Medium",
+      "scopeScore": 3,
+      "skills": ["Photography basics", "Photo editing", "Keyword SEO"],
+      "tools": ["Lightroom Mobile (free)", "Snapseed", "iPhone / Android camera"],
+      "platforms": ["Shutterstock", "Adobe Stock", "Getty Images", "Unsplash+"],
+      "revenueModel": {
+        "primary": "Royalty per download ($0.25–$5.00/download)",
+        "secondary": "Subscription subscription access pools",
+        "upsells": ["Sell Lightroom presets on Etsy", "Wedding / event photography ($500–$2,000/event)"]
+      },
+      "roadmap": [
+        "Identify high-demand niches (food, business, diversity, tech)",
+        "Shoot 100 high-quality images in first month",
+        "Upload to Shutterstock and Adobe Stock simultaneously",
+        "Research keyword tags — this is 80% of success",
+        "Upload 20–30 new images weekly for compound growth",
+        "Sell Lightroom presets as passive product on Etsy/Gumroad"
+      ],
+      "pros": ["Truly passive after upload", "Zero ongoing work", "Portfolio grows over time"],
+      "cons": ["Very slow income growth", "High competition in popular niches"],
+      "resources": [
+        { "name": "Shutterstock Contributor", "url": "https://www.shutterstock.com/contributorsignup" },
+        { "name": "Adobe Stock", "url": "https://contributor.stock.adobe.com" }
+      ],
+      "badge": "📸",
+      "featured": false
+    }
+  ]
+}
